@@ -1,34 +1,34 @@
 function Plant(name, discription, plantClass, application,
                growthPlace, discoverer) {
     this.name = name;
-    this.discription = discription;
-    this.plantClass = plantClass;
-    this.application = application;
-    this.growthPlace = growthPlace;
     this.discoverer = discoverer;
+    this.plantClass = plantClass;
+    this.growthPlace = growthPlace;
+    this.application = application;
+    this.discription = discription;
 
     this.getName = function() {
         return this.name;
     }
 
-    this.getDiscription = function() {
-        return this.discription;
+    this.getDiscoverer = function() {
+        return this.discoverer;
     }
 
     this.getPlantClass = function() {
         return this.plantClass;
     }
 
-    this.getApplication = function() {
-        return this.application;
-    }
-
     this.getGrowthPlace = function() {
         return this.growthPlace;
     }
 
-    this.getDiscoverer = function() {
-        return this.discoverer;
+    this.getApplication = function() {
+        return this.application;
+    }
+
+    this.getDiscription = function() {
+        return this.discription;
     }
 }
 
