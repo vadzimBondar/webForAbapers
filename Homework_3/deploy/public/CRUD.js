@@ -22,6 +22,13 @@ function onCreate(ev) {
     xhr.setRequestHeader("Content-Type", "application/json");
     xhr.send(data);
     alert("Object Created");
+
+    document.getElementById("cplantName").value = "";
+    document.getElementById("cdiscoverer").value = "";
+    document.getElementById("cplantClass").value = "";
+    document.getElementById("cgrowthPlace").value = "";
+    document.getElementById("capplication").value = "";
+    document.getElementById("cdiscription").value = "";
 }
 
 function onRead() {
@@ -133,6 +140,13 @@ function onUpdate(ev) {
     xhr.setRequestHeader("Content-Type", "application/json");
     xhr.send(data);
     alert("Object Updated");
+
+    document.getElementById("uplantName").value = "";
+    document.getElementById("udiscoverer").value = "";
+    document.getElementById("uplantClass").value = "";
+    document.getElementById("ugrowthPlace").value = "";
+    document.getElementById("uapplication").value = "";
+    document.getElementById("udiscription").value = "";
 }
 
 function onDelete(ev) {
@@ -162,7 +176,6 @@ function onDelete(ev) {
     document.getElementById('rbutton').addEventListener(
         'click', onRead
     );
-
 
     document.getElementById('ubutton').addEventListener(
         'click', onUpdate
@@ -213,5 +226,3 @@ function parseCPUToTableRow(CPUs){
 
     return row;
 }
-
-
