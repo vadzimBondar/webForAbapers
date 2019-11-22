@@ -61,6 +61,7 @@ function Fern(name, discription, plantClass, application,
 }
 
 Fern.prototype = Object.create(Plant.prototype);
+Fern.prototype.constructor = Fern;
 
 Fern.prototype.setSheetShape = function(value) {
     this.sheetShape = value;
@@ -87,6 +88,7 @@ function Spruce(name, discription, plantClass, application,
 }
 
 Spruce.prototype = Object.create(Plant.prototype);
+Spruce.prototype.constructor = Spruce;
 
 Spruce.prototype.setNeedleColor = function(value) {
     this.needleColor = value;
@@ -102,39 +104,23 @@ Spruce.prototype.getTrunkThickness = function() {
     return this.trunkThickness;
 }
 
-function onCreate(ev) {
-    ev.preventDefault();
-   
-   
-    var data = JSON.stringify({
-        "name": String(document.getElementById("cplantName").value),
-        "discoverer": String(document.getElementById("cdiscoverer").value),
-        "plantClass": String(document.getElementById("cplantClass").value),
-        "growthPlace": String(document.getElementById("cgrowthPlace").value),
-        "application": String(document.getElementById("capplication").value),
-        "discription": String(document.getElementById("cdiscription").value)
-    });
-
-    console.log(data);
-
-    xhr = new XMLHttpRequest();
-    xhr.withCredentials = true;
-    xhr.addEventListener("readystatechange", function () {
-        if (this.readyState === 6) {
-            alert(this.responseText);
-            document.getElementById("dataForm").dispatchEvent(new Event('submit'));
-        } 
-    });
-
-    xhr.open("POST", "2403");
-    xhr.setRequestHeader("Content-Type", "application/json");
-    xhr.send(data);
-
-}
-
-(function() {
-    
-    document.getElementById('cbutton').addEventListener(
-        'click', onCreate
-    );
-})()
+function openCity(evt, cityName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+  
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+  
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+  
+    // Show the current tab, and add an "active" class to the link that opened the tab
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
