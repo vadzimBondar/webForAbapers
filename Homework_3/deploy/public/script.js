@@ -104,7 +104,8 @@ Spruce.prototype.getTrunkThickness = function() {
     return this.trunkThickness;
 }
 
-function openCity(evt, cityName) {
+function openCity(ev, cityName) {
+    ev.preventDefault();
     var i, tabcontent, tablinks;
   
     tabcontent = document.getElementsByClassName("tabcontent");
@@ -116,7 +117,7 @@ function openCity(evt, cityName) {
     for (i = 0; i < tablinks.length; i++) {
       tablinks[i].className = tablinks[i].className.replace("active", "");
     }
-  
+
     document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " active";
+    ev.currentTarget.className += " active";
   }

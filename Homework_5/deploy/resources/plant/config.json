@@ -1,0 +1,53 @@
+{
+	"type": "Collection",
+	"properties": {
+		"plantName": {
+			"name": "plantName",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "plantName",
+			"order": 0
+		},
+		"discoverer": {
+			"name": "discoverer",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "discoverer",
+			"order": 1
+		},
+		"plantClass": {
+			"name": "plantClass",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "plantClass",
+			"order": 2
+		},
+		"growthPlace": {
+			"name": "growthPlace",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "growthPlace",
+			"order": 3
+		},
+		"application": {
+			"name": "application",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "application",
+			"order": 4
+		},
+		"discription": {
+			"name": "discription",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "discription",
+			"order": 5
+		}
+	}
+}
