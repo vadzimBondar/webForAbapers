@@ -307,7 +307,7 @@ formUpdate.appendChild(udivDiscription);
 
 var butUpdateObj = document.createElement('button');
 butUpdateObj.type = "sumbit";
-butUpdateObj.className = "btn btn-success";
+butUpdateObj.className = "btn btn-warning";
 butUpdateObj.id = "ubutton"
 butUpdateObj.innerHTML = "Update";
 formUpdate.appendChild(butUpdateObj);
@@ -334,7 +334,7 @@ formDelete.appendChild(divPlantID);
 
 var butDeleteObj = document.createElement('button');
 butDeleteObj.type = "sumbit";
-butDeleteObj.className = "btn btn-success";
+butDeleteObj.className = "btn btn-danger";
 butDeleteObj.id = "dbutton"
 butDeleteObj.innerHTML = "Delete";
 formDelete.appendChild(butDeleteObj);
