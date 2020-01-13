@@ -10,45 +10,45 @@ class Plant {
         this.discription = discription;
     }
 
-    setName(value) {
+    set Name(value) {
         this.name = value;
     }
-    getName() {
+    get Name() {
         return this.name;
     }
 
-    setDiscoverer(value) {
+    set setDiscoverer(value) {
         this.discoverer = value;
     }
-    getDiscoverer() {
+    get getDiscoverer() {
         return this.discoverer;
     }
 
-    setPlantClass(value) {
+    set setPlantClass(value) {
         this.plantClass = value;
     }
-    getPlantClass() {
+    get getPlantClass() {
         return this.plantClass;
     }
 
-    setGrowthPlace(value) {
+    set setGrowthPlace(value) {
         this.growthPlace = value;
     }
-    getGrowthPlace() {
+    get getGrowthPlace() {
         return this.growthPlace;
     }
 
-    setApplication(value) {
+    set setApplication(value) {
         this.application = value;
     }
-    getApplication() {
+    get getApplication() {
         return this.application;
     }
 
-    setDiscription(value) {
+    set setDiscription(value) {
         this.discription = value;
     }
-    getDiscription() {
+    get getDiscription() {
         return this.discription;
     }
 }
@@ -63,17 +63,17 @@ class Fern extends Plant {
         this.gametoType = gametoType;
     }
 
-    setSheetShape(value) {
+    set setSheetShape(value) {
         this.sheetShape = value;
     }
-    getSheetShape() {
+    get getSheetShape() {
         return this.sheetShape;
     }
 
-    setGametoType(value) {
+    set setGametoType(value) {
         this.gametoType = value;
     }
-    getGametoType() {
+    get getGametoType() {
         return this.gametoType;
     }
 }
@@ -88,17 +88,17 @@ class Spruce extends Plant {
         this.trunkThickness = trunkThickness;
     }
 
-    setNeedleColor(value) {
+    set setNeedleColor(value) {
         this.needleColor = value;
     }
-    getNeedleColor() {
+    get getNeedleColor() {
         return this.needleColor;
     }
 
-    setTrunkThickness(value) {
+    set setTrunkThickness(value) {
         this.trunkThickness = value;
     }
-    getTrunkThickness() {
+    get getTrunkThickness() {
         return this.trunkThickness;
     }
 }
